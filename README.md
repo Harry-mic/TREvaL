@@ -7,7 +7,7 @@ TREvaL(Reward Model for Reasonable Robustness evaluation), is a framework for ge
 *[TREvaL: Are Large Language Models Really Robust to Word-Level Perturbations?](https://arxiv.org/abs/2309.11166)*
 
 <div align="center">
-  <img src="/data/home/harrwang/code/TREvaL_github/TREvaL.png" width="480" height="300" alt="图片描述"/>
+  <img src="TREvaL.png" width="480" height="300" alt="图片描述"/>
 </div>
 
 Three perturbation forms are available:
