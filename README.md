@@ -24,7 +24,7 @@ Notably, the tested LLMs or MLMs can be obtained in each related repo above.
 
 
 # Installation
-To run our code, you need to have Python 3(>=3.7), conda and pip installed on your machine. The installation can be down by the following procedures:
+To run our code, you need to have Python 3(>=3.8), conda and pip installed on your machine. The installation can be down by the following procedures:
 
 To clone the repo:
 
@@ -47,7 +47,7 @@ To do the evaluation, here is an example:
 
 ```
 # LLM model: llama, alpaca, beavor, llama2, llama2-7b-chat, llama2-13b-chat, llama2-70b-chat
-# MLM model: bert-base-uncased
+# MLM model: bert-base-uncased 
 # Reward model: beaver-7b-v1.0-reward, beaver-7b-v1.0-cost
 # task: misspelling, swapping, synonym
 # attack_degree: 3, 5, 10
