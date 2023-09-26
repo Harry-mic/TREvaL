@@ -13,10 +13,10 @@ import argparse
 import os
 
 MODEL_PATH={
-    'llama-2-7b':'llama-2-7b/',
+    'llama-2-7b':'/root/autodl-tmp/llama/llama-2-7b',
     'llama-2-13b':'llama-2-13b/',
     'llama-2-70b':'llama-2-70b/',
-    'llama-2-7b-chat':'llama-2-7b-chat/',
+    'llama-2-7b-chat':'/root/autodl-tmp/llama/llama-2-7b-chat',
     'llama-2-13b-chat':'llama-2-13b-chat/',
     'llama-2-70b-chat':'llama2-70b-chat'
 }
@@ -30,7 +30,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, )
     parser.add_argument("--save_path", type=str, default='/root/autodl-tmp/evaluation_output')
-    parser.add_argument("--model", type=str,  choices=["beavor","alpaca","llama","llama2-7b","llama2-chat-7b","llama2-chat-13b"])
+    parser.add_argument("--model", type=str,  choices=["beavor","alpaca","llama","llama-2-7b","llama-2-7b-chat","llama-2-13b-chat"])
     parser.add_argument("--task", type=str,  choices=["misspelling","swapping","synonym"])
     parser.add_argument("--eval_len", type=int, default=1000)
     parser.add_argument("--attack_degree", type=int)
@@ -39,7 +39,7 @@ def get_args():
 
 def main(args):
     ckpt_dir = MODEL_PATH[args.model]
-    tokenizer_path = 'tokenizer.model'
+    tokenizer_path = '/root/autodl-tmp/TREval/llama2/tokenizer.model'
     temperature: float = 0.6
     top_p: float = 0.9
     max_seq_len: int = 128

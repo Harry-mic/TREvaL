@@ -8,7 +8,7 @@ import argparse
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 MODEL_PATH={
-    'RewardModel':'/beaver-7b-v1.0-reward',
+    'RewardModel':'/root/autodl-tmp/huggingface_datasets/beaver-7b-v1.0-reward',
     'CostModel':'/beaver-7b-v1.0-cost',
 }
 
@@ -38,7 +38,7 @@ def main(args):
     reward_model = AutoModelForScore.from_pretrained(MODEL_PATH[args.model], device_map='auto')
     reward_model.to('cuda')
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH[args.model], use_fast=False)
-    path = args.save_path + '/' + args.model + '/' + args.task + '/' + args.dataset + '/' + 'attack_degree' +str(args.attack_degree)
+    path = args.save_path + '/' + 'beavor' + '/' + args.task + '/' + args.dataset + '/' + 'attack_degree' +str(args.attack_degree)
 
     prompt_cleans = np.array(pd.read_csv(path+'/csv_clean_prompts.csv'))
     answer_cleans = np.array(pd.read_csv(path+'/csv_clean_answers.csv'))

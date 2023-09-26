@@ -2,7 +2,7 @@ import argparse
 import os
 import logging
 from transformers import AutoModelForCausalLM, AutoTokenizer, BertTokenizer, BertForMaskedLM, BertConfig
-from safe_rlhf.models import AutoModelForScore
+# from safe_rlhf.models import AutoModelForScore
 import pandas as pd
 import numpy as np
 import torch

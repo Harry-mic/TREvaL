@@ -58,10 +58,10 @@ To do the evaluation, here is an example:
 python Beavor_models/generate_and_attack.py --model beavor --dataset nq --task misspelling --attack_degree 10
 
 # For interacting with Llama2 series
-python llama2_models/attack.py --model llama2-7b --dataset nq --task misspelling --attack_degree 10
+torchrun --nproc_per_node 1 llama2/attack.py --model llama-2-chat-7b --dataset nq --task misspelling --attack_degree 10
 
 # For evaluating the score
-python Beavor_models/eval.py --model RewardModel/CostModel --dataset nq --task misspelling --attack_degree 10
+python Beavor_models/eval.py --model RewardModel --dataset nq --task misspelling --attack_degree 10
 ```
 
 To draw the loss landscape, here is an example:

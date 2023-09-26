@@ -33,7 +33,7 @@ PROMPT_SETS ={
     'nq':'',
 }
 MODEL_PATH={
-    'beavor':'/home/data_2/why_22/code/safe-rlhf/beaver-7b-v1.0',
+    'beavor':'/root/autodl-tmp/huggingface_datasets/beaver-7b-v1.0',
     'alpaca':'/home/data_2/why_22/code/safe-rlhf/alpaca-7b-reproduced',
     'llama':'/home/data_2/why_22/code/safe-rlhf/llama-7b-hf'
 }
@@ -43,7 +43,7 @@ def get_args():
 
     parser.add_argument('--dataset', type=str, default='nq', choices=['nq'])
     parser.add_argument("--mlm_path", type=str, default='/root/autodl-tmp/huggingface_datasets/bert-base-uncased')
-    parser.add_argument("--save_path", type=str, default='/home/data_2/why_22/code/safe-rlhf/')
+    parser.add_argument("--save_path", type=str, default='/root/autodl-tmp/evaluation_output/')
     parser.add_argument("--model", type=str,  choices=["beavor","alpaca","llama"])
     parser.add_argument("--task", type=str, choices=["misspelling","swapping","synonym"])
     parser.add_argument("--eval_len", type=int, default=1000)
