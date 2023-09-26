@@ -1,0 +1,38 @@
+name: TREvaL
+channels:
+  - defaults
+  - huggingface
+  - pytorch
+  - nvidia/label/cuda-11.7.1
+  - defaults
+  - conda-forge
+dependencies:
+  - python = 3.8
+  - pip
+  - pytorch::pytorch >= 1.13
+  - pytorch::pytorch-mutex =*=*cuda*
+  - transformers >= 4.29.0
+  - datasets
+  - tokenizers >= 0.13.3
+  - sentencepiece
+  - tensorboard
+  - wandb
+  - pip:
+      - accelerate
+      - deepspeed
+      - fairscale
+      - fire
+      - numpy
+      - matplotlib
+      - torchvision
+
+  - nvidia/label/cuda-11.7.1::cuda-toolkit = 11.7
+
+  - optree
+  - scipy
+  - nvitop
+  - matplotlib-base
+  - rich
+  - tqdm
+  - typing-extensions
+  
