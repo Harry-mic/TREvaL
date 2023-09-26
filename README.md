@@ -19,6 +19,7 @@ Our code builds on top of various existing repos, especially:
 * Beavor Series: https://github.com/PKU-Alignment/safe-rlhf
 * Llama2 Series: https://github.com/facebookresearch/llama
 * Synonym: https://github.com/LinyangLee/BERT-Attack
+* landscape: https://github.com/marcellodebernardi/loss-landscapes
 
 Notably, the tested LLMs or MLMs can be obtained in each related repo above.
 
