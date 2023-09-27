@@ -25,7 +25,7 @@ Notably, the tested LLMs or MLMs can be obtained in each related repo above.
 
 
 # Installation
-To run our code, you need to have Python 3(>=3.8), conda and pip installed on your machine. The installation can be down by the following procedures:
+To run our code, you need to have Python 3(>=3.8), conda and pip installed on your machine. The installation can be done by the following procedures:
 
 To clone the repo:
 
