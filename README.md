@@ -1,5 +1,5 @@
 # TREvaL
-We are unlocking the TREvaL to facilitate further exploration in evaluation LLMs fields.```Notably, this repo is not complete enough, we will release the full version in Oct.```
+We are unlocking the TREvaL to facilitate further exploration in evaluation LLMs fields.
 
 # Overview 
 TREvaL(Reward Model for Reasonable Robustness evaluation), is a framework for generating word-level perturbations on open questions and evaluating the helpfulness, harmlessness robustness of LLMs via these prompts. This repo provide a codebase for TREvaL and a method to depict LLMs' loss landscapes. The repository is an implementation for:
